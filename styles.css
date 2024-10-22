@@ -17,7 +17,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 350px; /* Max width of container */
+    max-width: 350px;
     padding: 40px 25px;
     border-radius: 25px;
     text-align: center;
@@ -74,10 +74,10 @@ body {
     text-decoration: none;
     color: #59628b; /* Updated text color */
     font-weight: bold;
-    font-size: 18px; /* Slightly bigger text */
+    font-size: 18px; /* Bigger text for better readability */
     transition: background-color 0.3s, box-shadow 0.3s;
     box-shadow: 5px 5px 0px rgba(128, 160, 201, 1); /* Hard shadow with no blur */
-    border: none; /* Removed border */
+    border: none;
 }
 
 .btn:hover {
@@ -103,9 +103,9 @@ body {
 
 .social-icon {
     display: inline-block;
-    margin: 0 15px; /* More space between the social icons */
+    margin: 0 15px; /* More space between social icons */
     color: #fff;
-    font-size: 30px; /* Increased size of social icons */
+    font-size: 30px; /* Bigger social icons to balance with buttons */
     transition: color 0.3s;
 }
 
@@ -121,34 +121,34 @@ body {
 
     .container {
         padding: 30px 20px;
-        max-width: 100%; /* Full width for mobile */
-        box-shadow: none; /* Remove shadow for mobile for a cleaner look */
+        max-width: 100%;
+        box-shadow: none; /* Remove shadow for mobile */
     }
 
     .profile-name {
-        font-size: 18px; /* Slightly smaller text for mobile */
+        font-size: 18px;
     }
 
     .profile-desc {
-        font-size: 13px; /* Adjust font size for smaller screens */
+        font-size: 13px;
     }
 
     .btn {
         padding: 16px; /* Adjust button padding for mobile */
-        font-size: 16px; /* Slightly smaller text in buttons */
+        font-size: 16px;
     }
 
     .icon {
-        left: 15px; /* Reduce padding for icon on smaller screens */
-        font-size: 18px; /* Slightly smaller icon size */
+        left: 15px;
+        font-size: 18px;
     }
 
     .btn-text {
-        font-size: 16px; /* Adjust button text size */
+        font-size: 16px;
     }
 
     .social-icon {
         font-size: 26px; /* Slightly smaller social icons for mobile */
-        margin: 0 10px; /* Adjust space between social icons on mobile */
+        margin: 0 10px;
     }
 }
