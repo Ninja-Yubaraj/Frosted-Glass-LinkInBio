@@ -1,0 +1,154 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #90c3e7, #d5a4c7);
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 350px; /* Max width of container */
+    padding: 40px 25px;
+    border-radius: 25px;
+    text-align: center;
+    
+    /* Frosted Glass Effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Profile section */
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.profile-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.profile-desc {
+    font-size: 15px;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+.links {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding: 18px; /* Increased button size */
+    margin: 20px 0; /* More space between buttons */
+    background-color: #fff; /* White background */
+    border-radius: 12px;
+    text-decoration: none;
+    color: #59628b; /* Updated text color */
+    font-weight: bold;
+    font-size: 18px; /* Slightly bigger text */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 5px 5px 0px rgba(128, 160, 201, 1); /* Hard shadow with no blur */
+    border: none; /* Removed border */
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+    box-shadow: 6px 6px 0px rgba(128, 160, 201, 1); /* Hard shadow effect on hover */
+}
+
+.icon {
+    position: absolute;
+    left: 20px; /* Position icon to the left */
+    font-size: 20px;
+}
+
+.btn-text {
+    width: 100%;
+    text-align: center; /* Center-align text */
+}
+
+/* Social media icons */
+.social {
+    margin-top: 30px; /* More space above the icons */
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 15px; /* More space between the social icons */
+    color: #fff;
+    font-size: 30px; /* Increased size of social icons */
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 30px 20px;
+        max-width: 100%; /* Full width for mobile */
+        box-shadow: none; /* Remove shadow for mobile for a cleaner look */
+    }
+
+    .profile-name {
+        font-size: 18px; /* Slightly smaller text for mobile */
+    }
+
+    .profile-desc {
+        font-size: 13px; /* Adjust font size for smaller screens */
+    }
+
+    .btn {
+        padding: 16px; /* Adjust button padding for mobile */
+        font-size: 16px; /* Slightly smaller text in buttons */
+    }
+
+    .icon {
+        left: 15px; /* Reduce padding for icon on smaller screens */
+        font-size: 18px; /* Slightly smaller icon size */
+    }
+
+    .btn-text {
+        font-size: 16px; /* Adjust button text size */
+    }
+
+    .social-icon {
+        font-size: 26px; /* Slightly smaller social icons for mobile */
+        margin: 0 10px; /* Adjust space between social icons on mobile */
+    }
+}
